@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mariadb
 PKG_VERSION:=10.4.17
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL := \
@@ -58,7 +58,6 @@ MARIADB_DISABLE_PLUGINS := \
 	daemon_example \
 	debug_key_management \
 	example_key_management \
-	fulltext \
 	versioning
 
 MARIADB_SERVER_PLUGINS := \
