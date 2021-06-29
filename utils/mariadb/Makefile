@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mariadb
 PKG_VERSION:=10.4.17
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL := \
@@ -68,6 +68,7 @@ MARIADB_SERVER_PLUGINS := \
 	disks \
 	feedback \
 	file_key_management \
+	fulltext \
 	ha_archive \
 	ha_blackhole \
 	ha_connect \
@@ -96,6 +97,7 @@ plugin-auth_pam_v1              := PLUGIN_AUTH_PAM_V1
 plugin-disks                    := PLUGIN_DISKS
 plugin-feedback                 := PLUGIN_FEEDBACK
 plugin-file_key_management      := PLUGIN_FILE_KEY_MANAGEMENT
+plugin-fulltext                 := PLUGIN_FULLTEXT
 plugin-ha_archive               := PLUGIN_ARCHIVE
 plugin-ha_blackhole             := PLUGIN_BLACKHOLE
 plugin-ha_connect               := PLUGIN_CONNECT
