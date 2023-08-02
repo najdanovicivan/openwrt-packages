@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libsigc++
-PKG_VERSION:=2.10.6
+PKG_VERSION:=2.12.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
-PKG_SOURCE_URL:=@GNOME/libsigc++/2.10
-PKG_HASH:=dda176dc4681bda9d5a2ac1bc55273bdd381662b7a6d49e918267d13e8774e1b
+PKG_SOURCE_URL:=@GNOME/libsigc++/2.12
+PKG_HASH:=1c466d2e64b34f9b118976eb21b138c37ed124d0f61497df2a90ce6c3d9fa3b5
 
 PKG_MAINTAINER:=Najdanovic Ivan <najdanovicivan@gmail.com>
 PKG_LICENSE:=LGPL-3.0-or-later
@@ -23,7 +23,7 @@ PKG_INSTALL:=1
 PKG_BUILD_DEPENDS:=meson/host
 
 include $(INCLUDE_DIR)/package.mk
-include ../../../packages/devel/meson/meson.mk
+include $(INCLUDE_DIR)/meson.mk
 
 MESON_ARGS += \
         -Dbuild-examples=false
