@@ -5,12 +5,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=svxlink
-PKG_VERSION:=19.09.1
+PKG_VERSION:=19.09.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=svxlink-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/sm0svx/svxlink/archive/$(PKG_VERSION).tar.gz?
-PKG_HASH:=5e5cbc3501fa6c6ec68334f8217ef93f5dc879d4d0e41e6f71378fd67d69f6a2
+PKG_HASH:=47e9bf098cef19a8f0a3bf567e96d70447cb028e0fcfc3bbeb692ae5bae05a70
 
 PKG_INSTALL:=1 
 PKG_BUILD_PARALLEL:=1
